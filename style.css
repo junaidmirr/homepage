@@ -1,0 +1,59 @@
+body{
+    background-color:black; color:white; font-family:"Helvetica", "Arial";
+}
+
+.logo{
+    text-align:center; margin-top:150px;
+}
+
+.logo img{
+    border-radius:50%;
+}
+
+.greetings{
+    text-align:center; margin-top:20px;
+}
+
+.shortcuts{
+    margin:10px; text-align:center;
+}
+
+.shortcuts a{
+    margin:10px;
+}
+
+.shortcuts a img{
+    height:50px; border-radius:50%; border: 2px solid white;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#search-input {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+}
+
+#search-button {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 5px;
+    outline: none;
+}
+
+#search-button:hover {
+    background-color: #777;
+}

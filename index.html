@@ -1,0 +1,47 @@
+<html>
+  <head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Welcome to Via!</title>
+       <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+       <div class="logo">
+           <img src="images/logo.jpg" alt="logo" title="logo">
+       </div>
+       <div class="greetings">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-button">🔍</button>
+        </div>
+       </div>
+          <br>
+      <div class="shortcuts">
+           <a href="https://github.com" class="github"><img src="images/github.png" alt="GitHub" title="GitHub"></a>
+           <a href="https://drive.google.com" class="gdrive"><img src="images/gdrive.png" alt="GDrive" title="GDrive"></a>
+           <a href="https://instagram.com" class="onedrive"><img src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png" alt="OneDrive" title="instagram"></a>
+           <a href="https://m.facebook.com" class="mega"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="Mega" title="Facebook"></a>
+           <br><br>
+           <a href="https://www.phind.com/search?home=true" class="mediafire"><img src="https://cdn-icons-png.flaticon.com/128/3665/3665997.png" alt="MediaFire" title="Phind Ai"></a>
+           <a href="https://twitter.com" class="aniwatch"><img src="https://cdn-icons-png.flaticon.com/128/5969/5969020.png" alt="AniWatch" title="X"></a>
+           <a href="https://amazon.in" class="amazon"><img src="images/amazon.png" alt="Amazon" title="Amazon"></a>
+           <a href="https://groq.com/" class="flipkart"><img src="https://cdn-icons-png.flaticon.com/128/12504/12504486.png" alt="Flipkart" title="Groq"></a>
+      </div>
+      <script>
+         document.getElementById('search-input').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                performSearch();
+            }
+         });
+
+         document.getElementById('search-button').addEventListener('click', performSearch);
+
+         function performSearch() {
+            var query = document.getElementById('search-input').value;
+            var searchUrl = 'https://www.google.com/search?q=' + encodeURIComponent(query);
+            window.location.href = searchUrl;
+         }
+      </script>
+  </body>
+</html>
